@@ -1,12 +1,89 @@
-# React + Vite
+Refine AI – Project Requirement Refinement Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Refine AI is an AI-powered multi-agent system designed to collaboratively refine project requirements. It uses specialized AI agents (Project Manager, Developer, Designer, Market Analyst, and Judge) to iteratively improve project specifications, identify risks, and produce a refined product description.
 
-Currently, two official plugins are available:
+🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🤖 Multi-Agent Collaboration – Agents like Project Manager, Developer, Designer, Market Analyst, and Judge collaborate to refine requirements.
 
-## Expanding the ESLint configuration
+📝 Requirement Refinement Rounds – Iterative refinement rounds with detailed feedback and change logs.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+📊 Judge Oversight – A judge agent ensures balanced decisions and resolves conflicts among other agents.
+
+🎨 Interactive UI – Built with React + TailwindCSS for a modern, responsive design.
+
+📂 Database Support – Requirements, feedback, and refined results are stored in MongoDB.
+
+📹 Demo Video Support – Ability to embed or upload demo videos directly.
+
+🛠️ Tech Stack
+
+Frontend: React, TailwindCSS, Lucide Icons
+
+Backend: Node.js, Express
+
+Database: MongoDB (Mongoose ODM)
+
+Authentication: Google OAuth (Passport.js)
+
+Other Tools: Vite, REST API
+
+📦 Installation
+
+Clone the repository
+
+git clone https://github.com/your-username/refine-ai.git
+cd refine-ai
+
+
+Install dependencies
+
+npm install
+
+
+Setup environment variables
+Create a .env file in the root directory:
+
+MONGO_URI=your_mongodb_connection_string
+GOOGLE_CLIENT_ID=your_google_client_id
+GOOGLE_CLIENT_SECRET=your_google_client_secret
+PORT=3000
+
+
+Run the development server
+
+npm run dev
+
+📖 Usage
+
+Start the backend API and frontend client.
+
+Create or select a project.
+
+Add requirements → Agents refine them across multiple rounds.
+
+View feedback, risks, and final refined product.
+
+Export results to PDF/JSON.
+
+Optionally, watch the demo video of the refinement process.
+
+📸 Screenshots
+
+(Add screenshots of your UI here for better presentation)
+
+📹 Demo
+
+If you have a demo video, include it:
+
+<video width="600" controls>
+  <source src="/videos/demo.mp4" type="video/mp4">
+</video>
+
+🤝 Contributing
+
+Contributions are welcome! Please fork the repo and create a pull request with your changes.
+
+📄 License
+
+This project is licensed under the MIT License.
